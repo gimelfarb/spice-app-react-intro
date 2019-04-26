@@ -1,68 +1,59 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# spice-app-react-intro
 
-## Available Scripts
+A sample app showing how to use [spice-app-react](https://github.com/gimelfarb/spice-app-react) to blend React with existing static HTML markup.
 
-In the project directory, you can run:
+Live version: <https://spice-app-react-intro.surge.sh>
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Run locally
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+Following will start the local webserver and open the default browser:
 
-### `npm test`
+```bash
+$ npm install
+$ npm start
+```
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Build
 
-### `npm run build`
+```bash
+$ npm run build
+```
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Contents of `build` folder can be deployed to any static hosting provider.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## How it was made
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+App is based on [create-react-app](https://facebook.github.io/create-react-app/):
 
-### `npm run eject`
+```bash
+$ npx create-react-app spice-app-react-intro --use-npm
+$ cd spice-app-react-intro
+$ rm src/*
+$ rm public/manifest.json
+$ npm i spice-app-react
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Customize:
+* `public/index.html` - static site design
+* `src/index.js` - use `Spice.blend(...)` instead of `ReactDOM.render(...)`
+* `src/App.js` - application logic, blending with elements already on the page
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**NOTE**: This repository had run `npm run eject` after `create-react-app`, in order to customize webpack config for a better local debugging experience, while developing it. It is not normally necessary.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Authors
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+* **Lev Gimelfarb** - *Initial work* - [@gimelfarb](https://github.com/gimelfarb)
 
-## Learn More
+See also the list of [contributors](https://github.com/gimelfarb/html-fiddle/contributors) who participated in this project.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## License
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This project is licensed under the ISC License - see the [LICENSE.md](LICENSE.md) file for details
 
-### Code Splitting
+## Acknowledgments
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+* [Bulma](https://bulma.io) - Awesome modern CSS framework based on Flexbox
 
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Also, thanks [@PurpleBooth](https://github.com/PurpleBooth), for the [README template](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)!
