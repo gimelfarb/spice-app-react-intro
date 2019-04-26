@@ -35,12 +35,11 @@ $ rm public/manifest.json
 $ npm i spice-app-react
 ```
 
-Customize:
+Then customize (see source code for the actual code):
+
 * `public/index.html` - static site design
 * `src/index.js` - use `Spice.blend(...)` instead of `ReactDOM.render(...)`
 * `src/App.js` - application logic, blending with elements already on the page
-
-**NOTE**: This repository had run `npm run eject` after `create-react-app`, in order to customize webpack config for a better local debugging experience, while developing it. It is not normally necessary.
 
 ## Authors
 
