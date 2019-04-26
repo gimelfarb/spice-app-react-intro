@@ -37,9 +37,9 @@ $ npm i spice-app-react
 
 Then customize (see source code for the actual code):
 
-* `public/index.html` - static site design
-* `src/index.js` - use `Spice.blend(...)` instead of `ReactDOM.render(...)`
-* `src/App.js` - application logic, blending with elements already on the page
+* [`public/index.html`](./public/index.html) - static site design
+* [`src/index.js`](./src/index.js) - use `Spice.blend(...)` instead of `ReactDOM.render(...)`
+* [`src/App.js`](./src/App.js) - application logic, blending with elements already on the page
 
 ## Authors
 
